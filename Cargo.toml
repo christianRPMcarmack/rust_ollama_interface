@@ -1,0 +1,18 @@
+[package]
+name = "ollama_interface"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+openssl-sys = "0.9.102"
+reqwest = "0.12.2"
+wake-on-lan = "0.2.0"
+poem = { version = "2.0.1", features = ["websocket" ] }
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"] }
+tracing-subscriber = { version = "0.3.9", features = ["env-filter"] }
+serde_json = "1.0.68"
+serde = { version = "1.0.140", features = ["derive"] }
+futures-util = "0.3.21"
+tracing = "0.1.40"
